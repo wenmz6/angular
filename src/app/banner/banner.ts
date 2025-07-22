@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, linkedSignal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -8,5 +8,11 @@ import { RouterModule } from '@angular/router';
   styleUrl: './banner.css'
 })
 export class Banner {
+
+  liens = Signal<link[]> = signal([
+    { name: 'Demo', url: ['/demo'], isVisible: true },
+
+
+  ])
 
 }

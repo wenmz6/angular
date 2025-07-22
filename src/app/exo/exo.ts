@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-exo',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterModule, RouterOutlet],
   templateUrl: './exo.html',
   styleUrl: './exo.css'
 })
@@ -13,5 +14,10 @@ export class Exo {
 
   maMethode(): void {
     this.maVariable = this.twoWay
+
+
   }
+
+
+
 }

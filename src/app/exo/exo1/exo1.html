@@ -1,0 +1,4 @@
+<p>{{second()}}</p>
+<button [disabled]="isRunning()" (click)="start()">Start</button>
+<button [disabled]="!isRunning()" (click)="pause()">Pause</button>
+<button (click)="reset()">Reset</button>
